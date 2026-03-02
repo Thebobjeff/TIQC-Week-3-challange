@@ -4,7 +4,7 @@ import { Homepage } from "../pages/index";
 export const Allroutes = () => {
   return (
     <Routes>
-      <Route path="/" element={<Homepage />} />
+      <Route path="/home" element={<Homepage />} />
     </Routes>
   );
 };
