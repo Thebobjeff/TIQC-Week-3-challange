@@ -1,0 +1,15 @@
+{
+  "name": "tiqc-data-dash",
+  "version": "1.0.0",
+  "scripts": {
+    "seed": "node ./prisma/seeder.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.0.0",
+    "@faker-js/faker": "^8.0.0",
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "prisma": "^5.0.0"
+  }
+}
