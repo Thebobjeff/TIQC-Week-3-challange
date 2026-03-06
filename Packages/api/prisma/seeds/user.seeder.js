@@ -3,19 +3,23 @@ const { faker } = require("@faker-js/faker");
 const generateUsers = async () => {
   const users = [
     {
-      name: "Admin User",
-      age: 30,
-      email: "admin@example.com",
+      // id is autoincremented in Prisma, so we can omit it or let Prisma handle it
+      name: "Aria Chen",
+      email: "aria@company.io",
+      role: "Engineer",
+      status: "active",
+      Joined: new Date("2024-01-15"), // Prisma expects a Date object for DateTime fields
     },
   ];
 
-  // Generating 10 additional random users
-  for (let i = 0; i < 10; i++) {
+  // Generating 5 additional random users
+  for (let i = 0; i < 5; i++) {
     users.push({
       name: faker.person.fullName(),
-      // Generates a random age between 18 and 80
-      age: faker.number.int({ min: 18, max: 80 }),
-      email: faker.internet.email(),
+      email: faker.internet.email().toLowerCase(), // Ensuring uniqueness/consistency
+      role: faker.helpers.arrayElement(["ADMIN", "USER", "ENGINEER"]),
+      status: faker.helpers.arrayElement(["active", "inactive", "pending"]),
+      Joined: faker.date.past(), // Generates a random past Date object
     });
   }
 

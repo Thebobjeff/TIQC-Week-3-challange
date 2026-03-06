@@ -1,15 +1,25 @@
 {
-  "name": "tiqc-data-dash",
-  "version": "1.0.0",
+  "name": "api",
+  "type": "module",
+  "packageManager": "yarn@4.13.0",
+  "prisma": {
+    "schema": "prisma/schema.prisma"
+  },
   "scripts": {
-    "seed": "node ./prisma/seeder.js"
+    "start": "nodemon src/server.js",
+    "db-reset": "prisma migrate reset",
+    "db-migrate": "prisma migrate dev",
+    "db-seed": "node prisma/seed.js",
+    "dev": "npx nodemon server.js",
+    "db:push": "prisma db push",
+    "generate": "prisma generate"
   },
   "dependencies": {
-    "@prisma/client": "^5.0.0",
-    "@faker-js/faker": "^8.0.0",
-    "dotenv": "^16.0.0"
+    "@prisma/client": "^7.4.2",
+    "express": "^5.2.1"
   },
   "devDependencies": {
-    "prisma": "^5.0.0"
+    "nodemon": "^3.1.14",
+    "prisma": "^7.4.2"
   }
 }
