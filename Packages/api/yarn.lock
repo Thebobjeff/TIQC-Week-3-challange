@@ -476,6 +476,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/faker@npm:^6":
+  version: 6.6.8
+  resolution: "@types/faker@npm:6.6.8"
+  dependencies:
+    faker: "npm:*"
+  checksum: 10c0/afd46dfb4c425b109acf5b09d3e15e9dea88a8da794c2090ae51dd7895e11015a69251bdb155117d518704189966eb15a556df4056e225a0ca7ffd15c658dded
+  languageName: node
+  linkType: hard
+
 "@types/node@npm:*, @types/node@npm:^25.3.5":
   version: 25.3.5
   resolution: "@types/node@npm:25.3.5"
@@ -516,9 +525,11 @@ __metadata:
   dependencies:
     "@prisma/adapter-pg": "npm:^7.4.2"
     "@prisma/client": "npm:^7.4.2"
+    "@types/faker": "npm:^6"
     "@types/node": "npm:^25.3.5"
     "@types/pg": "npm:^8.18.0"
     dotenv: "npm:^17.3.1"
+    faker: "npm:^6.6.6"
     pg: "npm:^8.20.0"
     prisma: "npm:^7.4.2"
     tsx: "npm:^4.21.0"
@@ -842,6 +853,13 @@ __metadata:
   version: 1.0.8
   resolution: "exsolve@npm:1.0.8"
   checksum: 10c0/65e44ae05bd4a4a5d87cfdbbd6b8f24389282cf9f85fa5feb17ca87ad3f354877e6af4cd99e02fc29044174891f82d1d68c77f69234410eb8f163530e6278c67
+  languageName: node
+  linkType: hard
+
+"faker@npm:*, faker@npm:^6.6.6":
+  version: 6.6.6
+  resolution: "faker@npm:6.6.6"
+  checksum: 10c0/21f6a57adc921ffb61e5ff767024a699a414047264ff4bbb080bd4994ec5a8061e1828aae9a4be812f6f356f1b6fd082bc2d54df7c37163b943a421a8f7f7079
   languageName: node
   linkType: hard
 
